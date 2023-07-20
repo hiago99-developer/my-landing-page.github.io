@@ -31,6 +31,7 @@
   --cor05: #f3f1f2;
   --cor06: #684142;
   --cor07: #bfa1a184;
+  --cor08: #666666;
 
   --fonte-padrao: "Cocomat", sans-serif;
   --fonte-secundaria: "Kiona", sans-serif;
@@ -124,7 +125,7 @@ h1 {
   margin: 73px 0 5px 0px;
   padding: 0px 13%;
   font-family: var(--fonte-secundaria);
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--cor01);
   animation: fadeIn 2s;
   animation-fill-mode: forwards;
@@ -149,7 +150,7 @@ h1 {
   font-size: 0.9rem;
   font-style: normal;
   font-weight: 600;
-  color: var(--cor01);
+  color: var(--cor08);
 }
 
 .highlighted-word {
@@ -167,7 +168,7 @@ h1 {
   border-radius: 10px;
   background-color: var(--cor04);
   font-family: var(--fonte-padrao);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.9rem;
   text-align: center;
   color: var(--cor06);
