@@ -218,7 +218,7 @@ h1 {
   background-color: transparent;
 }
 
-#line-services {
+.line-two-section {
   width: 80%;
   color: var(--cor06);
   border-width: 4px;
@@ -306,7 +306,7 @@ h2 {
 }
 
 .about-me {
-  padding: 60px 0 80px 0;
+  padding: 60px 0 85px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -318,7 +318,7 @@ h2 {
 #line-about-me {
   display: flex;
   align-self: self-start;
-  width: 50%;
+  width: 55%;
   color: var(--cor06);
   border-width: 4px;
 }
@@ -354,11 +354,12 @@ h2 {
   line-height: 1rem;
   color: var(--cor03);
   background-color: var(--cor04);
+  border-radius: 5px;
 }
 
 .text-about-me > h3 {
   color: var(--cor06);
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   font-size: 0.8rem;
 }
 
@@ -366,11 +367,11 @@ ul.about-me-list li:before {
   content: "➤ "; /* Adicione um símbolo antes de cada item da lista */
 }
 
-ul {
+.about-me-list {
   list-style-type: none;
   padding: 5px;
   display: flex;
-  gap: 10px;
+  gap: 15px;
   font-size: 0.7rem;
   flex-direction: column;
   font-weight: 500;
@@ -379,7 +380,7 @@ ul {
 }
 
 #contacts {
-  padding-bottom: 25px;
+  padding: 60px 0;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -390,23 +391,23 @@ ul {
 
 .text-contacts {
   width: auto;
+  padding: 25px 0;
 }
 
 .text-contacts > p {
-  margin: 0 15px 20px 15px;
-  padding: 0 30px 15px 30px;
+  padding: 0 15px;
   font-family: var(--fonte-padrao);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.7rem;
   text-align: center;
   line-height: 1rem;
-  color: var(--cor01);
+  color: var(--cor03);
 }
 
 .redes-sociais {
   height: auto;
   width: 100%;
-  margin-bottom: 30px;
+  padding: 25px 0;
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -428,9 +429,10 @@ ul {
   background-color: var(--cor06);
   color: var(--cor00);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   font-family: var(--fonte-padrao);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  border-radius: 20px;
 }
 
 .redes-sociais a:hover {
@@ -497,30 +499,40 @@ footer > p {
     flex-direction: column-reverse;
   }
 
+  #about-me-section {
+    padding: 0;
+  }
+
   .content-about-me {
+    position: relative;
+    display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
   }
 
   .about-me {
-    height: 35vh;
+    height: auto;
   }
 
   #about-me-title {
     border: none;
     position: relative;
-    left: 150px;
-    top: 85px;
-    width: 110px;
+    padding: 5% 0 0 13%;
+  }
+
+  #line-about-me {
+    width: 40%;
   }
 
   .about-me-img {
-    margin-left: 50px;
-    border-bottom: none;
-    top: 25px;
+    position: relative;
+    left: 5%;
   }
 
   .text-about-me {
-    margin: 75px;
+    padding: 35px;
+    margin: 65px 65px 65px 105px;
   }
 
   .text-contacts {
@@ -531,10 +543,6 @@ footer > p {
 
   #contacts {
     height: 30vh;
-    background-image: url(imagens/imagens-decoracao/blob-scatter-haikei2.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .redes-sociais {
