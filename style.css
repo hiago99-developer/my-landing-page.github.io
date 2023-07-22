@@ -174,6 +174,7 @@ h1 {
   color: var(--cor06);
   transition: all 1s ease;
   cursor: pointer;
+  box-shadow: 1px 2px #00000047;
 }
 
 .btn-initial-paragraph {
@@ -206,23 +207,21 @@ h1 {
   flex-direction: column;
   align-items: center;
   height: auto;
-  background-image: url(imagens/imagens-decoracao/stacked-waves-haikei.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  padding: 0 0 45px 0;
+  background-color: #ffffff;
 }
 
 #introduction-services {
   width: auto;
   height: auto;
   margin: 10px 0;
-  background-color: var(--cor00);
+  background-color: transparent;
 }
 
 #line-services {
   width: 70%;
   color: var(--cor06);
-  border-width: 2px;
+  border-width: 4px;
 }
 
 #introduction-services h2 {
@@ -240,14 +239,15 @@ h1 {
   margin: 10px 0 15px 0;
   padding: 0 15px;
   font-family: var(--fonte-padrao);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-align: center;
-  color: var(--cor03);
+  color: var(--cor08);
 }
 
 .card {
   background-color: var(--cor04);
+  box-shadow: 0px 0px 4px #4d4c4c5e;
 }
 
 .text-services {
@@ -279,7 +279,7 @@ hr {
   padding: 10px 20px;
   font-family: var(--fonte-padrao);
   font-weight: 600;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-style: italic;
   text-align: center;
   color: var(--cor06);
@@ -306,44 +306,55 @@ h2 {
 }
 
 .about-me {
-  padding: 0 0 25px 0;
+  padding: 60px 0;
   display: flex;
+  gap: 15px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: auto;
   background-color: var(--cor05);
 }
 
+#line-about-me {
+  display: flex;
+  align-self: self-start;
+  width: 50%;
+  color: var(--cor06);
+  border-width: 4px;
+}
+
 #about-me-title {
-  width: 80%;
-  border-top: 1px solid var(--cor03);
-  padding-top: 25px;
+  width: 100%;
+  position: relative;
+  text-align: left;
+  padding-left: 50px;
 }
 
 .content-about-me {
   display: flex;
+  gap: 15px;
   flex-direction: column;
   align-items: center;
 }
 
 .about-me-img {
   position: relative;
-  height: auto;
-  max-width: 250px;
-  border-bottom: 1px solid var(--cor06);
+  right: 23px;
+  height: 15rem;
+  max-width: 100%;
 }
 
 .text-about-me {
   position: relative;
-  padding: 15px 20px;
-  width: 80%;
+  padding: 15px 45px;
+  width: 100%;
   font-family: var(--fonte-padrao);
   font-weight: 600;
   font-size: 0.7rem;
-  text-align: center;
+  text-align: left;
   line-height: 1rem;
-  color: var(--cor01);
+  color: var(--cor08);
 }
 
 #contacts {
@@ -353,10 +364,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(imagens/imagens-decoracao/blob-scatter-haikei.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: var(--cor04);
 }
 
 .text-contacts {
