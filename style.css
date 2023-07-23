@@ -113,7 +113,7 @@ li > a {
   width: 100%;
   height: auto;
   background-color: var(--cor05);
-  box-shadow: 0 2px 1px #66666682;
+  box-shadow: 0 1px 1px #66666666;
 }
 
 .initial-text-only {
@@ -236,7 +236,7 @@ h1 {
   font-family: var(--fonte-secundaria);
   font-size: 1.2rem;
   text-align: center;
-  color: var(--cor01);
+  color: var(--cor06);
 }
 
 #introduction-services p {
@@ -307,7 +307,7 @@ h2 {
   font-family: var(--fonte-secundaria);
   font-size: 1.2rem;
   text-align: center;
-  color: var(--cor01);
+  color: var(--cor06);
 }
 
 .about-me {
