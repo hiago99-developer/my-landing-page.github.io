@@ -42,6 +42,8 @@ body {
 }
 
 header {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -50,7 +52,7 @@ header {
   max-height: 120px;
   min-height: 90px;
   background-color: var(--cor03);
-  box-shadow: 0 0 30px var(--cor02);
+  box-shadow: 0 2px 10px #666666;
 }
 
 header img {
@@ -105,11 +107,13 @@ li > a {
 }
 
 .initial-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
   background-color: var(--cor05);
+  box-shadow: 0 2px 1px #66666682;
 }
 
 .initial-text-only {
@@ -168,13 +172,13 @@ h1 {
   border-radius: 50px;
   background-color: var(--cor04);
   font-family: var(--fonte-padrao);
-  font-weight: 600;
-  font-size: 0.7rem;
+  font-weight: 500;
+  font-size: 0.8rem;
   text-align: center;
   color: var(--cor06);
   transition: all 1s ease;
   cursor: pointer;
-  box-shadow: 1px 2px #00000047;
+  box-shadow: 1px 1px 1px #00000047;
 }
 
 .btn-initial-paragraph {
@@ -221,7 +225,8 @@ h1 {
 .line-two-section {
   width: 80%;
   color: var(--cor06);
-  border-width: 4px;
+  border-width: 2px;
+  box-shadow: 1px 1px 2px #00000080;
 }
 
 #introduction-services h2 {
@@ -318,9 +323,10 @@ h2 {
 #line-about-me {
   display: flex;
   align-self: self-start;
-  width: 55%;
   color: var(--cor06);
-  border-width: 4px;
+  border-width: 2px;
+  width: 95%;
+  box-shadow: 1px 1px 2px #00000080;
 }
 
 #about-me-title {
@@ -328,6 +334,7 @@ h2 {
   position: relative;
   text-align: left;
   padding: 0 0 0 50px;
+  font-size: 1.4rem;
 }
 
 .content-about-me {
@@ -355,6 +362,7 @@ h2 {
   color: var(--cor03);
   background-color: var(--cor04);
   border-radius: 5px;
+  box-shadow: 2px 2px 2px #68414282;
 }
 
 .text-about-me > h3 {
@@ -386,7 +394,13 @@ ul.about-me-list li:before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--cor04);
+  background: rgb(240, 204, 204);
+  background: linear-gradient(
+    175deg,
+    rgba(240, 204, 204, 1) 0%,
+    rgba(243, 213, 213, 1) 50%,
+    rgba(245, 221, 221, 1) 100%
+  );
 }
 
 .text-contacts {
