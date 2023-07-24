@@ -173,7 +173,7 @@ h1 {
   margin: 15px 0;
   padding: 10px;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   background-color: var(--cor04);
   font-family: var(--fonte-padrao);
   font-weight: 500;
@@ -182,7 +182,7 @@ h1 {
   color: var(--cor06);
   transition: all 1s ease;
   cursor: pointer;
-  box-shadow: 1px 1px 1px #00000047;
+  box-shadow: -4px 4px 1px #666;
 }
 
 .btn-initial-paragraph {
@@ -231,37 +231,40 @@ h1 {
   background-color: transparent;
 }
 
-.line-two-section {
-  width: 80%;
-  color: var(--cor03);
-  border-width: 2px;
-  box-shadow: 1px 1px 2px #00000080;
-}
-
 #introduction-services h2 {
+  display: flex;
   width: 100%;
   margin-bottom: 10px;
-  padding: 0 45px;
+  padding: 0 30px;
   font-family: var(--fonte-secundaria);
   font-size: 1.2rem;
   text-align: center;
   color: var(--cor03);
+  text-shadow: 0 0 1px #00000040;
+}
+
+#introduction-services h2::before {
+  content: url(imagens/icons/icons8-linha-vertical-24.png);
 }
 
 #introduction-services p {
-  width: 89%;
-  margin: 10px 0 15px 0;
-  padding: 0 15px;
+  width: 100%;
+  margin: 0 0 15px 0;
+  padding: 0 40px;
   font-family: var(--fonte-padrao);
   font-size: 0.8rem;
-  font-weight: 600;
-  text-align: center;
+  font-weight: 500;
+  text-align: left;
   color: var(--cor08);
+}
+
+#card1 {
+  border-radius: 10px 10px 0 0;
 }
 
 .card {
   background-color: var(--cor04);
-  box-shadow: 0px 0px 1px #684142;
+  box-shadow: 0px 0px 3px #343434;
 }
 
 .text-services {
@@ -292,7 +295,7 @@ hr {
 .services-paragraphs {
   padding: 10px 20px;
   font-family: var(--fonte-padrao);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 0.6rem;
   font-style: italic;
   text-align: center;
@@ -329,21 +332,18 @@ h2 {
   background-color: var(--cor05);
 }
 
-#line-about-me {
-  display: flex;
-  align-self: self-start;
-  color: var(--cor06);
-  border-width: 2px;
-  width: 95%;
-  box-shadow: 1px 1px 2px #00000080;
-}
-
 #about-me-title {
+  display: flex;
   width: 100%;
   position: relative;
   text-align: left;
-  padding: 0 0 0 50px;
-  font-size: 1.4rem;
+  padding: 0 30px;
+  font-size: 1.2rem;
+  text-shadow: 0 0 1px #00000040;
+}
+
+#about-me-section h2::before {
+  content: url(imagens/icons/icons8-linha-vertical-24.png);
 }
 
 .content-about-me {
@@ -371,7 +371,7 @@ h2 {
   color: var(--cor03);
   background-color: var(--cor04);
   border-radius: 5px;
-  box-shadow: 2px 2px 2px #68414282;
+  box-shadow: -3px 3px 2px #666666c3;
 }
 
 .text-about-me > h3 {
@@ -524,8 +524,16 @@ footer > p {
     flex-direction: row;
   }
 
+  #card1 {
+    border-radius: 10px 0 0 0;
+  }
+
   #card2 {
     flex-direction: column-reverse;
+  }
+
+  #card3 {
+    border-radius: 0 10px 0 0;
   }
 
   #about-me-section {
