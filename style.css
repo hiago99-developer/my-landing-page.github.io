@@ -182,7 +182,7 @@ h1 {
   color: var(--cor06);
   transition: all 1s ease;
   cursor: pointer;
-  box-shadow: -4px 4px 1px #666;
+  box-shadow: -2px 2px 4px #666;
 }
 
 .btn-initial-paragraph {
@@ -258,13 +258,12 @@ h1 {
   color: var(--cor08);
 }
 
-#card1 {
-  border-radius: 10px 10px 0 0;
-}
-
 .card {
-  background-color: var(--cor04);
-  box-shadow: 0px 0px 3px #343434;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background-color: #f0ccccde;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px #00000075;
 }
 
 .text-services {
@@ -310,7 +309,8 @@ hr {
 }
 
 .services-img {
-  max-width: 230px;
+  border-radius: 10px;
+  max-width: 190px;
 }
 
 h2 {
@@ -524,16 +524,20 @@ footer > p {
     flex-direction: row;
   }
 
-  #card1 {
-    border-radius: 10px 0 0 0;
+  .section-set {
+    display: flex;
+    gap: 0 15px;
+  }
+
+  .card {
+    border-radius: 10px;
+    margin-bottom: 0;
   }
 
   #card2 {
     flex-direction: column-reverse;
-  }
-
-  #card3 {
-    border-radius: 0 10px 0 0;
+    padding-bottom: 0;
+    padding-top: 20px;
   }
 
   #about-me-section {
