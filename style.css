@@ -311,8 +311,10 @@ hr {
 }
 
 h2 {
-  margin: 0 0 15px 0;
+  display: flex;
   width: 100%;
+  margin-bottom: 10px;
+  padding: 0 30px;
   font-family: var(--fonte-secundaria);
   font-size: 1.2rem;
   text-align: center;
@@ -352,7 +354,7 @@ h2 {
 .about-me-img {
   position: relative;
   height: auto;
-  max-width: 250px;
+  max-width: 270px;
   padding-top: 25px;
 }
 
@@ -413,22 +415,23 @@ ul.about-me-list li:before {
 #contacts h2::before {
   content: url(imagens/icons/icons8-linha-vertical-24.png);
 }
-#contacts-title {
+
+#contacts-introduction {
+  padding-bottom: 20px;
+}
+#contacts-introduction > h2 {
   display: flex;
   width: 100%;
-  position: relative;
-  text-align: left;
-  padding: 0 30px;
+  margin: 35px 0 15px 0;
+  font-family: var(--fonte-secundaria);
   font-size: 1.2rem;
+  text-align: left;
+  color: var(--cor03);
   text-shadow: 0 0 1px #00000040;
 }
-.text-contacts {
-  width: auto;
-  padding: 0 25px 25px 25px;
-}
 
-.text-contacts > p {
-  padding: 0 15px;
+#contacts-introduction > p {
+  padding: 0 40px;
   font-family: var(--fonte-padrao);
   font-weight: 500;
   font-size: 0.7rem;
@@ -437,39 +440,36 @@ ul.about-me-list li:before {
   color: var(--cor03);
 }
 
-.redes-sociais {
-  height: auto;
-  width: 100%;
-  padding: 25px 0;
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  text-align: center;
-}
-
-.redes-sociais a {
-  width: 200px;
-  height: 30px;
-  padding: 17px 0;
+.buttons-redes-sociais {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  width: 200px;
+  height: 30px;
+  padding: 17px 0;
   background-color: var(--cor06);
-  color: var(--cor00);
-  text-decoration: none;
-  font-weight: 400;
-  font-family: var(--fonte-padrao);
-  font-size: 0.7rem;
   border-radius: 20px;
+  border: none;
 }
 
-.redes-sociais a:hover {
-  color: #666;
+.buttons-redes-sociais > a {
+  color: var(--cor05);
+  font-family: var(--fonte-padrao);
+  font-weight: 400;
+  font-size: 0.7rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.redes-sociais {
+  padding: 25px 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
 }
 
 .icons-contacts {
@@ -562,10 +562,15 @@ footer > p {
   }
 
   #about-me-title {
-    border: none;
-    position: relative;
-    padding: 5% 0 0 13%;
+    display: flex;
     width: 100%;
+    margin: 35px 0 0 0;
+    padding: 0 105px;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--cor03);
+    text-shadow: 0 0 1px #00000040;
   }
 
   #line-about-me {
@@ -582,27 +587,8 @@ footer > p {
     margin: 65px 65px 65px 105px;
   }
 
-  .text-contacts {
-    position: relative;
-    width: 80%;
-    left: 10%;
-  }
-
   #contacts {
     height: 30vh;
-  }
-
-  #contacts-title {
-    border: none;
-    position: relative;
-    padding: 7% 0 2% 13%;
-    width: 100%;
-  }
-
-  .text-contacts {
-    position: relative;
-    width: 80%;
-    left: 8%;
   }
 
   .redes-sociais {
