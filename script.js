@@ -2,6 +2,15 @@ const menuIcon = document.getElementById("menu");
 const menu = document.querySelector("#menuDesktop");
 let menuOpen = false;
 
+function checkOrientation() {
+  const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+  if (isPortrait) {
+    menu.classList.add("scrollable");
+  } else {
+    menu.classList.remove("scrollable");
+  }
+}
+
 menuIcon.addEventListener("click", function () {
   if (!menuOpen) {
     openMenu();
@@ -44,3 +53,6 @@ function closeMenu() {
   menuIcon.innerHTML = "menu";
   menuOpen = false;
 }
+
+window.addEventListener("load", checkOrientation);
+window.addEventListener("orientationchange", checkOrientation);
